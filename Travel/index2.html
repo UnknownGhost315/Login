@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.2.0/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="wrapper">
+        <!-- Background div with opacity applied -->
+        <div class="background"></div>
+        
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image text-center">
+                    <!------------- Image -------------> 
+                    <img src="Images/White.jpg" alt="Government Logo" class="logo"> <!-- Replace with your image -->
+                </div>
+                <div class="col-md-6 right">
+                    <div class="input-box">
+
+                        <header class="Login">Login</header>
+                        <!-- Form for login -->
+                        <form action="login_process.php" method="post">
+                            <div class="input-field">
+                                <input type="text" class="input" id="Username" name="username" required autocomplete="off">
+                                <label for="Username">Username</label> 
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" id="pass" name="password" required>
+                                <label for="pass">Password</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" class="submit" value="Sign in">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="server.js"></script>
+</body>
+</html>
